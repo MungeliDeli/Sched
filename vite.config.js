@@ -19,7 +19,6 @@ export default defineConfig({
         theme_color: "#DFE8F4",
         background_color: "#1e90ff",
         display: "standalone",
-        start_url: "/",
         base: "/Sched",
         icons: [
           {
