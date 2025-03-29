@@ -19,7 +19,7 @@ export default defineConfig({
         theme_color: "#DFE8F4",
         background_color: "#1e90ff",
         display: "standalone",
-        base: "/Sched",
+        base: "/Sched/",
         icons: [
           {
             src: "icons/pwa-192x192.png",
