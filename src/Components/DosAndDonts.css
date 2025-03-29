@@ -1,0 +1,35 @@
+/* DosAndDonts.css */
+.dos-donts {
+    height: 280px;
+  background: var(--background-color);
+  color: var(--text-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  
+}
+
+
+.dos-donts h2 {
+  /* text-align: center; */
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.dos-donts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dos-donts li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+

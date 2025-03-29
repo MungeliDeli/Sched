@@ -1,0 +1,31 @@
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: rem;
+  background: #1e90ff;
+  align-items: center;
+}
+header h1 {
+  font-size: 2rem;
+  color: #f0f0f0;
+}
+.sec-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.togglebtn {
+  background: transparent;
+  border: none;
+  margin-right: 0.5rem;
+}
+.togglebtn img {
+  width: 2rem;
+}
+.logo {
+  width: 2.5rem;
+  margin-left: .3rem;
+}

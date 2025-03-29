@@ -1,0 +1,40 @@
+
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent the entire page from scrolling */
+}
+
+header,
+.current-task,
+.dos-donts {
+  position: fixed;
+  width: 100%;
+  z-index: 100; /* Ensures they stay on top */
+}
+
+header {
+  top: 0;
+  height: 50px;
+  
+}
+
+.current-task {
+  top: 50px; /* Below the header */
+  height: 140px; /* Adjust as needed */
+}
+
+.dos-donts {
+  top: 190px; /* Below current task */
+  height: 280px; /* Adjust as needed */
+}
+
+.tasklist {
+  position: absolute;
+  top: 480px; /* Below dos-donts */
+  bottom: 0;
+  width: 100%;
+  overflow-y: auto;
+}

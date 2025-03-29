@@ -1,0 +1,21 @@
+.task{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+     height: 6rem;
+     padding: 1rem .5rem;
+    margin:.2rem;
+    border-radius: .7rem;
+    box-shadow: #1a1a1a8a 0px 3px 5px;
+}
+.task img{
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+
+}
+.task h3 , p{
+    color: #F0F0F0;
+    letter-spacing: .1rem;
+}
+
+

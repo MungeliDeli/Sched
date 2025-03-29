@@ -1,0 +1,118 @@
+  /* Define default (light) theme variables */
+:root {
+  --background-color: #DFE8F4;
+  --text-color: #181818;
+  --box-shadow: rgba(50, 50, 93, 0.25);
+  --box-shadow-inset:  rgba(0, 0, 0, 0.3);
+
+  /* Add other variables as needed */
+}
+
+/* Dark theme variables */
+[data-theme='dark'] {
+  --background-color: #181818;
+  --text-color: #DFE8F4;
+--box-shadow: rgba(248, 248, 248, 0.034);
+  --box-shadow-inset:  rgba(255, 255, 255, 0.075);
+;
+  /* Add other variables as needed */
+}
+
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+
+  
+  
+  
+  
+  
+  /* reset.css */
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Remove default margin and padding */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Remove list styles on ul, ol elements with a list role */
+  ul[role='list'],
+  ol[role='list'] {
+    list-style: none;
+  }
+
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: sans-serif;
+   
+  }
+
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  /* Remove all animations and transitions for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+
+ @media screen and (min-width: 720px) {
+  #app {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
