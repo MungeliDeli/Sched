@@ -1,7 +1,6 @@
 {
   "name": "my-sched",
-  "homepage": "https://MungeliDeli.github.io/Sched/",
-  
+  "homepage": "https://mungelideli.github.io/sched/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -11,7 +10,6 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
