@@ -13,14 +13,14 @@ export default defineConfig({
         "icons/masked-icon.svg",
       ],
       manifest: {
-        name: "Sched", e
+        name: "Sched", 
         short_name: "Sched",
         description: "Stay on top of your daily tasks and routines.",
         theme_color: "#DFE8F4",
         background_color: "#1e90ff",
         display: "standalone",
         start_url: "/",
-        base: "/Sched"
+        base: "/Sched",
         icons: [
           {
             src: "icons/pwa-192x192.png",
