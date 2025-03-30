@@ -7,6 +7,14 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
+      workbox: {
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/mungelideli\.github\.io\/Sched\//,
+            handler: "NetworkFirst",
+          },
+        ],
+      },
       includeAssets: [
         "favicon.ico",
         "icons/apple-touch-icon.png",

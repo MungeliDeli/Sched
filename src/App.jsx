@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css"
-
+  import { useEffect } from "react";
+import scheduleNotifications from "./Notifications";
 import Header from "./Components/Header";
 import TaskList from "./Components/TaskList ";
 import DosAndDonts from "./Components/DosAndDonts";
@@ -23,6 +24,25 @@ const App = () => {
     setIsDarkTheme(!isDarkTheme);
     // Additional logic to apply the theme can be implemented here
   };
+
+  const requestNotificationPermission = async () => {
+    if ("Notification" in window) {
+      const permission = await Notification.requestPermission();
+      if (permission !== "granted") {
+        console.warn(
+          "Notifications are disabled. Please enable them in settings."
+        );
+      }
+    }
+  };
+
+  useEffect(() => {
+    requestNotificationPermission();
+  }, []);
+
+  useEffect(() => {
+    scheduleNotifications(scheduleForToday.tasks);
+  }, [scheduleForToday.tasks]);
 
   return (
     <div id="app" className={isDarkTheme ? "dark-theme" : "light-theme"}>
