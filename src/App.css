@@ -28,12 +28,12 @@ header {
 
 .dos-donts {
   top: 190px; /* Below current task */
-  height: 280px; /* Adjust as needed */
+  height: 190px; /* Adjust as needed */
 }
 
 .tasklist {
   position: absolute;
-  top: 480px; /* Below dos-donts */
+  top: 370px; /* Below dos-donts */
   bottom: 0;
   width: 100%;
   overflow-y: auto;

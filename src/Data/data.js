@@ -111,7 +111,7 @@ const weeklySchedule = {
         id: 14,
         name: "Reading",
         time: "9:00 PM - 10:00 PM",
-        color: "##79848F",
+        color: "#79848F",
         img: book,
       },
       // Additional Monday tasks...
@@ -228,7 +228,7 @@ const weeklySchedule = {
         id: 16,
         name: "Reading",
         time: "9:00 PM - 10:00 PM",
-        color: "##79848F",
+        color: "#79848F",
         img: book,
       },
       // Additional Tuesday tasks...
@@ -331,7 +331,7 @@ const weeklySchedule = {
         id: 14,
         name: "Reading",
         time: "9:00 PM - 10:00 PM",
-        color: "##79848F",
+        color: "#79848F",
         img: book,
       },
       // Additional Tuesday tasks...
@@ -427,7 +427,7 @@ const weeklySchedule = {
         id: 13,
         name: "Reading",
         time: "9:00 PM - 10:00 PM",
-        color: "##79848F",
+        color: "#79848F",
         img: book,
       },
 
@@ -531,7 +531,7 @@ const weeklySchedule = {
         id: 14,
         name: "Reading",
         time: "8:00 PM - 10:00 PM",
-        color: "##79848F",
+        color: "#79848F",
         img: book,
       },
 
@@ -648,7 +648,7 @@ const weeklySchedule = {
         id: 5,
         name: "Reading",
         time: "8:00 AM - 10:00 AM",
-        color: "##79848F",
+        color: "#79848F",
         img: book,
       },
       {
