@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css"
   import { useEffect } from "react";
-import scheduleNotifications from "./Notifications";
+import scheduleNotifications from "./Notification";
 import Header from "./Components/Header";
 import TaskList from "./Components/TaskList ";
 import DosAndDonts from "./Components/DosAndDonts";
