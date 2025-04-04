@@ -5,11 +5,16 @@ const scheduleNotifications = (tasks) => {
   }
 
   tasks.forEach((task) => {
+    if (!task || !task.title || !task.time) {
+      console.warn("Invalid task data:", task);
+      return;
+    }
+
     const now = new Date();
     const taskStartTime = new Date();
 
-    // Convert "HH:MM AM/PM" to Date object
     const parseTime = (timeStr) => {
+      if (!timeStr) return { hours: 0, minutes: 0 };
       const [time, modifier] = timeStr.split(" ");
       let [hours, minutes] = time.split(":").map(Number);
       if (modifier === "PM" && hours !== 12) hours += 12;
@@ -17,8 +22,10 @@ const scheduleNotifications = (tasks) => {
       return { hours, minutes };
     };
 
-    const { hours, minutes } = parseTime(task.time.split(" - ")[0]); // Get start time
-    taskStartTime.setHours(hours, minutes - 10, 0); // Set time 10 mins before task
+    const startTimeString = task.time?.split(" - ")[0];
+    const { hours, minutes } = parseTime(startTimeString);
+
+    taskStartTime.setHours(hours, minutes - 10, 0);
 
     const timeUntilNotification = taskStartTime - now;
 
