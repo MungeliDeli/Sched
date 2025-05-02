@@ -488,7 +488,7 @@ const weeklySchedule = {
       {
         id: 8,
         name: "Class: Software Engineering",
-        time: "11:00 AM - 12:00 AM",
+        time: "11:00 AM - 12:00 PM",
         color: "#FF1248",
         img: classes,
       },
